@@ -1,5 +1,5 @@
 def who_wins(user_weapon, computer_weapon)
-  
+  # A hash of all the weapon combinations as keys, winners as values 
   results = {
 	"rockscissors" 	=> "user",
 	"paperrock" 	=> "user",
@@ -8,9 +8,8 @@ def who_wins(user_weapon, computer_weapon)
 	"paperscissors" => "computer",
 	"scissorsrock" 	=> "computer",
 	}
-  
+  # the method returns the value in the hash, based on the weapon combo
   return results[user_weapon+computer_weapon]
-  
 end
 
 # Rock, Paper Scissors

@@ -1,12 +1,7 @@
-## rock paper scissors - play with the computer
+## rock paper scissors lizard spock - play with the computer
 
-# rock, paper, scissors
-# rock beats scissors
-# paper beats rock
-# scissors beats paper
-
-#make a hash of the non-tie outcomes:
-# user 		computer 	who wins
+#make hashes of the non-tie outcomes and the reasons why:
+# user 		computer 	who wins (why)
 #-----------------------------------
 # rock		scissors	user (rock crushes scissors)
 # rock		paper		computer (paper covers rock)
@@ -75,28 +70,8 @@ who_wins = {
 	"spockrock" => "user",
 	"spockpaper" => "computer",
 	"spocklizard" => "computer"
-# rock		scissors	user (rock crushes scissors)
-# rock		paper		computer (paper covers rock)
-# scissors	paper		user (scissors cuts paper)
-# scissors	rock		computer (rock crushes scissors)
-# paper		rock		user (paper covers rock)
-# paper		scissors	computer (scissors cuts paper)
-# -- adding lizard and spock weapons
-# rock 		lizard		user (rock crushes lizard)
-# rock 		spock	    computer (spock vaporises rock)
-# scissors 	lizard		user (scissor decapitates lizard)
-# scissors  spock		computer (spock smashes scissors)
-# paper 	lizard 		computer (lizard eats paper)
-# paper 	spock		user (paper disproves spock)
-# lizard	spock		user (lizard poisons spock)
-# lizard	paper 		user (lizard eats paper)
-# lizard	rock  		computer (rock crushes lizard)
-# lizard	scissors 	computer (scissors decapitates lizard)
-# spock		scissors 	user (spock smashes scissors)
-# spock		rock 		user (spock vaporises rock)
-# spock		paper  		computer (paper disproves spock)
-# spock		lizard  	computer (lizard poisons spock)
 	}
+
 computer_score = 0
 user_score = 0
 user_weapon = " "
@@ -104,7 +79,6 @@ computer_weapon = " "
 
 # get input, test for the tie case, then if not a tie get who wins from the hash
 while computer_score <5 && user_score <5
-    # system "clear" or system "cls"	
     # get some input and check if is valid
 	user_weapon = " "
 	while !weapons.include?(user_weapon) # == false
