@@ -1,15 +1,6 @@
 def who_wins(user_weapon, computer_weapon)
   
-  results = {
-	"rockscissors" 	=> "user",
-	"paperrock" 	=> "user",
-	"scissorspaper" => "user",
-	"rockpaper" 	=> "computer",
-	"paperscissors" => "computer",
-	"scissorsrock" 	=> "computer",
-	}
-  
-  return results[user_weapon+computer_weapon]
+  #your code goes here!
   
 end
 
